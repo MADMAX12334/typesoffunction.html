@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function factorial(a){
+    var count=1;
+    for(i=a;i>=1;i--){
+        count=count*i
+        
+    }
+    console.log(count)
+}
+factorial(5);
+
+
+//arrow function
+
+var fact=(a)=>{
+      var count=1;
+    for(i=a;i>=1;i--){
+        count=count*i
+        
+    }
+    console.log(count)
+}
+fact(5)
+
+//anonymus function
+
+var factorrial=function(){
+     var count=1;
+    for(i=a;i>=1;i--){
+        count=count*i
+        
+    }
+    console.log(count)
+}
+factorial(5)
+
+//immediate invocation
+
+var factorial=(function(a){
+     var count=1;
+    for(i=a;i>=1;i--){
+        count=count*i
+        
+    }
+    console.log(count)
+})(5)
+//greatest of three numbers
+
+//arrow function
+var greatest=(a,b,c)=>{
+    
+    if(a>b && a>c){
+    console.log("Greatest of numbers "+a+","+b+","+c+" = "+a);
+}
+else if(b>a &&b>c){
+        console.log("Greatest of numbers "+a+","+b+","+c+" = "+b);
+}
+else if(c>a &&c>b){
+        console.log("Greatest of numbers "+a+","+b+","+c+" = "+c);
+}
+else{
+    console.log("please enter 3 different numbers")
+}
+}
+
+greatest(10,20,30)
+
+//ananymous function
+
+var greatestofthree=function(a,b,c){
+    
+    if(a>b && a>c){
+    console.log("Greatest of numbers "+a+","+b+","+c+" = "+a);
+}
+else if(b>a &&b>c){
+        console.log("Greatest of numbers "+a+","+b+","+c+" = "+b);
+}
+else if(c>a &&c>b){
+        console.log("Greatest of numbers "+a+","+b+","+c+" = "+c);
+}
+else{
+    console.log("please enter 3 different numbers")
+}
+}
+greatestofthree(10,20,30)
+
+//immidiate calling
+var greatestof3=(function(a,b,c){
+    if(a>b && a>c){
+    console.log("Greatest of numbers "+a+","+b+","+c+" = "+a);
+}
+else if(b>a &&b>c){
+        console.log("Greatest of numbers "+a+","+b+","+c+" = "+b);
+}
+else if(c>a &&c>b){
+        console.log("Greatest of numbers "+a+","+b+","+c+" = "+c);
+}
+else{
+    console.log("please enter 3 different numbers")
+}
+})(10,20,30)
+//Naming Function
+function even(){
+    
+    for(i=0;i<=10;i=i+2){
+        console.log(i)
+    }
+}
+even();
+
+
+//Arrow Function
+var hello=()=>{
+      for(i=0;i<=10;i=i+2){
+        console.log(i)
+}
+}
+hello();
+
+
+//ananymous function
+var hello1=function(){
+     for(i=0;i<=10;i=i+2){
+        console.log(i)
+}
+}
+
+hello1();
+
+//immidiately invoking function
+var v=(function(){
+     for(i=0;i<=10;i=i+2){
+        console.log(i)
+}
+})()
+//annus function//
+var hello=function(){
+    return "hello"
+}
+    </script>
